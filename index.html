@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NuxeCorps | Home</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #252525;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333333;
+            margin-left: 28px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #718c7a;
+        }
+
+        .hero {
+            padding: 75px 8% 55px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(36px, 5vw, 58px);
+            line-height: 1.1;
+            margin-bottom: 22px;
+        }
+
+        .hero p {
+            color: #666666;
+            max-width: 480px;
+            margin-bottom: 25px;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+            border-radius: 3px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #263c32;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        section {
+            padding: 55px 8%;
+        }
+
+        .section-heading {
+            margin-bottom: 28px;
+        }
+
+        .section-heading h2 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .section-heading p {
+            color: #777777;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 8px;
+            font-size: 19px;
+        }
+
+        .card p {
+            color: #666666;
+            font-size: 14px;
+        }
+
+        .about {
+            background: #f5f6f3;
+        }
+
+        .about p {
+            max-width: 750px;
+            color: #555555;
+            margin-top: 14px;
+        }
+
+        footer {
+            padding: 28px 8%;
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            flex-wrap: wrap;
+            border-top: 1px solid #e5e5e5;
+            color: #777777;
+            font-size: 13px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                padding-top: 45px;
+            }
+
+            .hero img {
+                height: 260px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">NuxeCorps</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Our Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero" id="home">
+            <div>
+                <h1>NuxeCorps</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam.
+                </p>
+                <a href="#about" class="button">Discover NuxeCorps</a>
+            </div>
+
+            <img
+                src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1000"
+                alt="Mountain landscape beside a lake"
+            >
+        </div>
+
+        <section id="services">
+            <div class="section-heading">
+                <h2>What We Do</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="cards">
+                <article class="card">
+                    <img
+                        src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800"
+                        alt="Sunlight filtering through a forest"
+                    >
+                    <h3>NuxeCorps</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Integer nec odio praesent libero.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800"
+                        alt="Ocean waves along the coast"
+                    >
+                    <h3>NuxeCorps</h3>
+                    <p>
+                        Sed cursus ante dapibus diam. Sed nisi nulla quis
+                        sem at nibh elementum imperdiet.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800"
+                        alt="Deer standing in a green landscape"
+                    >
+                    <h3>NuxeCorps</h3>
+                    <p>
+                        Duis sagittis ipsum. Praesent mauris fusce nec
+                        tellus sed augue semper porta.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="section-heading">
+                <h2>About NuxeCorps</h2>
+            </div>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                natoque penatibus et magnis dis parturient montes, nascetur
+                ridiculus mus.
+            </p>
+
+            <p>
+                Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu.
+            </p>
+        </section>
+
+        <section id="contact">
+            <div class="section-heading">
+                <h2>Get in Touch</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Contact our team for further information.
+                </p>
+            </div>
+            <p>Contact Us</p>
+        </section>
+    </main>
+
+    <footer>
+        <span>© 2026 NuxeCorps. All rights reserved.</span>
+        <span>NuxeCorps · NuxeCorps · NuxeCorps</span>
+    </footer>
+
+</body>
+</html>
